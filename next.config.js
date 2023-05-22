@@ -1,4 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+module.exports = {sassOptions: {
+  logger: {
+      warn: function (message) {
+          console.warn(message)
+      },
+      debug: function (message) {
+          console.log(message)
+      }
+  }
+}}
 
-module.exports = nextConfig
