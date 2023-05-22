@@ -1,4 +1,3 @@
-import { Suspense } from 'react'
 import './styles/globals.scss'
 import { Inter } from 'next/font/google'
 import Header from './header'
@@ -18,9 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Suspense fallback="...">
-          <Header />
-        </Suspense>
+        <Header />
         {children}
       </body>
     </html>

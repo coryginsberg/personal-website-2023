@@ -1,7 +1,8 @@
 import Image from 'next/image';
-import React, { ReactElement } from 'react';
+import React from 'react';
 import header from './styles/header.module.scss';
 import Link from 'next/link';
+import RoundedButton from './components/roundedButton';
 
 export default function Header() {
   return (
@@ -28,15 +29,10 @@ export default function Header() {
           height={60}
         />
       </div>
-      {/* Resume/Contact Me */}
+      {/* Contact Me */}
       <div className={header.buttonGroup}>
-        <Button>Check out my resume</Button>
-        <Button>Contact me</Button>
+        <RoundedButton>Contact me</RoundedButton>
       </div>
     </div>
   );
-}
-
-function Button(props: { children: string }) {
-  return <button className={header.button}>{props.children}</button>;
 }

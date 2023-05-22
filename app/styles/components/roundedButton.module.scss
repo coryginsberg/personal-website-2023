@@ -1,0 +1,9 @@
+@use "../variables.module.scss" as var;
+
+.button {
+  background-color: var.$gray;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 25px;
+  color: var.$text-color-dark;
+}

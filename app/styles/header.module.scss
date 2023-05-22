@@ -1,4 +1,4 @@
-$default-padding: 8px;
+@use "variables.module.scss" as var;
 
 .root {
   display: grid;
@@ -7,11 +7,11 @@ $default-padding: 8px;
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  gap: $default-padding;
+  gap: var.$default-padding;
 
   .sectionLinks {
     .link {
-      padding-right: $default-padding * 2;
+      padding-right: var.$default-padding * 2;
     }
   }
 
@@ -21,14 +21,5 @@ $default-padding: 8px;
 
   .buttonGroup {
     justify-self: end;
-
-    .button {
-      background-color: #e0e0e0;
-      border: none;
-      border-radius: 50px;
-      padding: 15px 25px;
-      color: #212121;
-      margin-left: $default-padding;
-    }
   }
 }
