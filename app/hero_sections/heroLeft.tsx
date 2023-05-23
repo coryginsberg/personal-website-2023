@@ -15,6 +15,7 @@ export default function HeroLeft() {
       <RoundedButton
         backgroundColor={variable.accentColor}
         color={variable.textColorLight}
+        className={styles.button}
       >
         Check out my resume
       </RoundedButton>

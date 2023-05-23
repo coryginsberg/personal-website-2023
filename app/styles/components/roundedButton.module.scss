@@ -1,9 +1,15 @@
 @use "../variables.module.scss" as var;
 
-.button {
-  background-color: var.$gray;
+@mixin button($background-color: var.$gray, $color: var.$text-color-dark) {
+  background-color: $background-color;
   border: none;
   border-radius: 50px;
   padding: 15px 25px;
-  color: var.$text-color-dark;
+  &:hover {
+    background-color: darken($color: $background-color, $amount: 15%);
+  }
+}
+
+.button {
+  @include button();
 }

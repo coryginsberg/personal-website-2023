@@ -1,10 +1,16 @@
+@use "./variables.module.scss" as var;
+@use "./components/roundedButton.module.scss";
+
 .hero {
   display: flex;
   justify-content: space-evenly;
+  
   .heroLeft {
-    padding: 24px;
-    padding-left: 0;
-    padding-top: 80px;
+    padding: {
+      all: 24px;
+      left: 0;
+      top: 80px;
+    }
 
     .header {
       font-size: 64px;
@@ -14,7 +20,12 @@
     .blurb {
       padding-bottom: 28px;
     }
+
+    .button {
+      @include roundedButton.button(var.$accent-color);
+    }
   }
+
   .heroRight {
     flex-grow: 2;
   }
