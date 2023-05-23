@@ -4,10 +4,10 @@
 .hero {
   display: flex;
   justify-content: space-evenly;
-  
   .heroLeft {
+    width: 50%;
+    padding: 24px;
     padding: {
-      all: 24px;
       left: 0;
       top: 80px;
     }
@@ -27,6 +27,17 @@
   }
 
   .heroRight {
-    flex-grow: 2;
+    width: 50%;
+    max-width: 50%;
+
+    .imagePopout {
+      margin-left: 10%;
+      .svg {
+        max-height: 800px;
+        overflow: visible;
+        z-index: -1;
+        position: relative;
+      }
+    }
   }
 }

@@ -2,6 +2,7 @@
 
 @mixin button($background-color: var.$gray, $color: var.$text-color-dark) {
   background-color: $background-color;
+  color: $color;
   border: none;
   border-radius: 50px;
   padding: 15px 25px;

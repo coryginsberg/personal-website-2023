@@ -20,6 +20,10 @@ body {
   @include var.theme('color', var.$foreground-color);
   @include var.theme('background-color', var.$background-color);
   height: 100vh;
+  padding: {
+    left: 80px;
+    right: 80px;
+  }
 }
 
 a {
