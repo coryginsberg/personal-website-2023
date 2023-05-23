@@ -5,15 +5,15 @@ type Props = {
   children: string;
   color?: string;
   backgroundColor?: string;
+  className?: string;
 };
 
 export default function RoundedButton(props: Props) {
   return (
     <button
-      className={styles.button}
+      className={props.className ?? styles.button}
       style={{
         color: props.color,
-        backgroundColor: props.backgroundColor,
       }}
     >
       {props.children}
