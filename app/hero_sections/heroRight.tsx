@@ -35,7 +35,7 @@ export default function HeroRight() {
       </g>
     </svg>
   );
- 
+
   return (
     <div className={styles.heroRight}>
       <div className={styles.imagePopout}>{headshotPopout}</div>
