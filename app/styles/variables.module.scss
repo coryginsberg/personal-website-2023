@@ -8,24 +8,24 @@ $default-padding: 8px;
 
 // Colors
 $accent-color: #00a0ff;
-$light-accent-color: #0CD1E8;
-$dark-accent-color: #0C5DE8;
-$foreground-color: #000000;
-$background-color: #FFFFFF;
+$foreground-color: #000;
+$background-color: #FFF;
 $gray: #E0E0E0;
 $dark-gray: #616161;
 $near-black: #2a2426;
 $text-color-dark: #212121;
 $text-color-light: #FDFDFD;
+$react-background: #2a2c32;
+$ts-background: #235a97;
 $dark-theme: "dark-theme";
 $light-theme: "light-theme";
 $themes: (
   $light-theme: (    
-    $foreground-color: #000000,
-    $background-color: #FFFFFF,
+    $foreground-color: #000,
+    $background-color: #FFF,
   ),
   $dark-theme: (
-    $foreground-color: #FFFFFF,
+    $foreground-color: #FFF,
     $background-color: #212127,
   )
 );
@@ -52,11 +52,11 @@ $themes: (
 // For use in JS
 :export {
   accentColor: $accent-color;
-  lightAccentColor: $light-accent-color;
-  darkAccentColor: $dark-accent-color;
   gray: $gray;
   darkGray: $dark-gray;
   nearBlack: $near-black;
   textColorDark: $text-color-dark;
   textColorLight: $text-color-light;
+  reactBackground: $react-background;
+  tsBackground: $ts-background;
 }

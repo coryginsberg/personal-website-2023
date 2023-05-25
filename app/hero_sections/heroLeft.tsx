@@ -4,7 +4,73 @@ import vars from '../styles/variables.module.scss';
 import styles from '../styles/hero.module.scss';
 import TextPill from '../components/textPill';
 import Image from 'next/image';
+
 export default function HeroLeft() {
+  const pills = (
+    <div className={styles.pillSection}>
+      <div className={styles.pillRow}>
+        <TextPill
+          backgroundColor={vars.reactBackground}
+          textColor={vars.textColorLight}
+          imageLeft={
+            <Image
+              src='/languages/react_logo.png'
+              alt='React Logo'
+              width={38}
+              height={30}
+            />
+          }
+        >
+          React
+        </TextPill>
+        <TextPill
+          backgroundColor={vars.tsBackground}
+          textColor={vars.textColorLight}
+          imageLeft={
+            <Image
+              src='/languages/ts_logo.png'
+              alt='JavaScript Logo'
+              width={38}
+              height={30}
+            />
+          }
+        >
+          TypeScript
+        </TextPill>
+      </div>
+      <div className={styles.pillRow}>
+        <TextPill
+          backgroundColor={vars.accentColor}
+          textColor={vars.textColorLight}
+          imageLeft={
+            <Image
+              src='/languages/python_logo.svg'
+              alt='JavaScript Logo'
+              width={32}
+              height={30}
+            />
+          }
+        >
+          Python
+        </TextPill>
+        <TextPill
+          backgroundColor={vars.gray}
+          textColor={vars.textColorDark}
+          imageLeft={
+            <Image
+              src='/languages/swift_logo.svg'
+              alt='JavaScript Logo'
+              width={38}
+              height={30}
+            />
+          }
+        >
+          Swift
+        </TextPill>
+      </div>
+    </div>
+  );
+
   return (
     <div className={styles.heroLeft}>
       <div className={styles.header}>
@@ -21,68 +87,7 @@ export default function HeroLeft() {
       >
         Check out my resume
       </RoundedButton>
-      <div className={styles.pillSection}>
-        <div className={styles.pillRow}>
-          <TextPill
-            backgroundColor={'#2a2c32'}
-            textColor={vars.textColorLight}
-            imageLeft={
-              <Image
-                src='/languages/react_logo.png'
-                alt='React Logo'
-                width={38}
-                height={30}
-              />
-            }
-          >
-            React
-          </TextPill>
-          <TextPill
-            backgroundColor={'#235a97'}
-            textColor={vars.textColorLight}
-            imageLeft={
-              <Image
-                src='/languages/ts_logo.png'
-                alt='JavaScript Logo'
-                width={38}
-                height={30}
-              />
-            }
-          >
-            TypeScript
-          </TextPill>
-        </div>
-        <div className={styles.pillRow}>
-          <TextPill
-            backgroundColor={vars.accentColor}
-            textColor={vars.textColorLight}
-            imageLeft={
-              <Image
-                src='/languages/python_logo.svg'
-                alt='JavaScript Logo'
-                width={32}
-                height={30}
-              />
-            }
-          >
-            Python
-          </TextPill>
-          <TextPill
-            backgroundColor={vars.gray}
-            textColor={vars.textColorDark}
-            imageLeft={
-              <Image
-                src='/languages/swift_logo.svg'
-                alt='JavaScript Logo'
-                width={38}
-                height={30}
-              />
-            }
-          >
-            Swift
-          </TextPill>
-        </div>
-      </div>
+      {pills}
     </div>
   );
 }
