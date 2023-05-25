@@ -38,6 +38,14 @@ export default function HeroRight() {
 
   return (
     <div className={styles.heroRight}>
+      <div className={styles.heroText}>
+        <div className={styles.largeText}>
+          5+
+        </div>
+        <div className={styles.smallText}>
+          years experience
+        </div>
+      </div>
       <div className={styles.imagePopout}>{headshotPopout}</div>
     </div>
   );
