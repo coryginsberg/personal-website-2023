@@ -4,4 +4,15 @@
   width: max-content;
   margin-right: 16px;
   font-size: 20px;
+
+  :first-child {
+    padding-right: 8px;
+    top: 3px;
+    position: relative;
+  }
+
+  .text {
+    top: -4px;
+    position: relative;
+  }
 }

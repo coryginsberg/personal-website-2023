@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from '../styles/components/textPill.module.scss';
+import Image from 'next/image';
 
 type Props = {
   backgroundColor: string;
   textColor: string;
-  children: React.ReactNode;
+  imageLeft: React.ReactNode;
+  children: string;
 };
 
 export default function TextPill(props: Props) {
@@ -13,7 +15,8 @@ export default function TextPill(props: Props) {
       className={styles.root}
       style={{ backgroundColor: props.backgroundColor, color: props.textColor }}
     >
-      {props.children}
+      {props.imageLeft}
+      <span className={styles.text}>{props.children}</span>
     </div>
   );
 }
