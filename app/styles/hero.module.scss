@@ -4,36 +4,69 @@
 .hero {
   display: flex;
   justify-content: space-evenly;
+  max-height: 650px;
+
   .heroLeft {
+    position: relative;
     width: 50%;
-    padding: 24px;
-    padding: {
+    height: auto;
+    padding: 24px {
       left: 0;
-      top: 80px;
+      top: 150px;
     }
 
     .header {
       font-size: 64px;
       padding-bottom: 18px;
     }
-
     .blurb {
       padding-bottom: 28px;
     }
-
     .button {
-      @include roundedButton.button(var.$accent-color);
+      @include roundedButton.button($background-color: var.$accent-color, $font-size: 16px);
+    }
+    .pillSection {
+      bottom: 0;
+      margin: {
+        bottom: 75px;
+        top: 75px;
+      }
+
+      .pillRow {
+        display: flex;
+        padding-bottom: 16px;
+      }
     }
   }
 
   .heroRight {
     width: 50%;
     max-width: 50%;
+    position: relative;
+
+    .heroText {
+      background-color: var.$dark-gray;
+      border-radius: 12px;
+      padding: 16px 24px;
+      top: 400px;
+      left: 12px;
+      width: fit-content;
+      position: absolute;
+      color: var.$text-color-light;
+      
+      .largeText {
+        font-size: 42px;
+      }
+      .smallText {
+        font-size: 16px;
+      }
+    }
 
     .imagePopout {
       margin-left: 10%;
+
       .svg {
-        max-height: 800px;
+        max-height: 750px;
         overflow: visible;
         z-index: -1;
         position: relative;

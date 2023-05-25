@@ -7,19 +7,17 @@ import RoundedButton from './components/roundedButton';
 export default function Header() {
   return (
     <div className={header.root}>
-      {/* Jumplink section */}
       <div className={header.sectionLinks}>
-        <Link href='#section1' className={header.link}>
-          Section 1
+        <Link href='https://github.com/coryginsberg' className={header.link}>
+          GitHub
         </Link>
-        <Link href='#section2' className={header.link}>
-          Section 2
-        </Link>
-        <Link href='#section3' className={header.link}>
-          Section 3
+        <Link
+          href='https://www.linkedin.com/in/cory-ginsberg/'
+          className={header.link}
+        >
+          LinkedIn
         </Link>
       </div>
-      {/* Logo */}
       <div className={header.logo}>
         <Image
           src='/Logo.svg'
@@ -29,9 +27,10 @@ export default function Header() {
           height={60}
         />
       </div>
-      {/* Contact Me */}
       <div className={header.buttonGroup}>
-        <RoundedButton>Contact me</RoundedButton>
+        <Link href="mailto:cory.ginsberg1@gmail.com">
+          <RoundedButton>Contact me</RoundedButton>
+        </Link>
       </div>
     </div>
   );
