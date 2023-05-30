@@ -29,7 +29,7 @@ export default function HeroLeft() {
           imageLeft={
             <Image
               src='/languages/ts_logo.png'
-              alt='JavaScript Logo'
+              alt='TypeScript Logo'
               width={38}
               height={30}
             />
@@ -45,7 +45,7 @@ export default function HeroLeft() {
           imageLeft={
             <Image
               src='/languages/python_logo.svg'
-              alt='JavaScript Logo'
+              alt='Python Logo'
               width={32}
               height={30}
             />
@@ -59,7 +59,7 @@ export default function HeroLeft() {
           imageLeft={
             <Image
               src='/languages/swift_logo.svg'
-              alt='JavaScript Logo'
+              alt='Swift Logo'
               width={38}
               height={30}
             />
