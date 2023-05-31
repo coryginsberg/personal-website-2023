@@ -2,9 +2,7 @@ import React from 'react';
 import ProjectCard from './components/projectCard';
 import styles from './styles/projects.module.scss';
 
-type Props = {};
-
-export function Projects(props: Props) {
+export function Projects() {
   return (
     <div className={styles.root}>
       <h1>Project Spotlight</h1>
