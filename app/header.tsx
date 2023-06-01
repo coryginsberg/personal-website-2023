@@ -8,11 +8,11 @@ export default function Header() {
   return (
     <div className={header.root}>
       <div className={header.sectionLinks}>
-        <Link href='https://github.com/coryginsberg' className={header.link}>
+        <Link href="https://github.com/coryginsberg" className={header.link}>
           GitHub
         </Link>
         <Link
-          href='https://www.linkedin.com/in/cory-ginsberg/'
+          href="https://www.linkedin.com/in/cory-ginsberg/"
           className={header.link}
         >
           LinkedIn
@@ -20,8 +20,8 @@ export default function Header() {
       </div>
       <div className={header.logo}>
         <Image
-          src='/Logo.svg'
-          alt='Personal Logo'
+          src="/Logo.svg"
+          alt="Personal Logo"
           priority={true}
           width={60}
           height={60}

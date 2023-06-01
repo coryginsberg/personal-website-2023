@@ -13,7 +13,7 @@ export default function TextPill(props: Props) {
   return (
     <div
       className={styles.root}
-      style={{ backgroundColor: props.backgroundColor, color: props.textColor }}
+      style={{backgroundColor: props.backgroundColor, color: props.textColor}}
     >
       {props.imageLeft}
       <span className={styles.text}>{props.children}</span>

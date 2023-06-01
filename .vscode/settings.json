@@ -1,11 +1,7 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
   "scss.validate": false,
-  "stylelint.validate": [
-    "css",
-    "scss",
-    ".module.scss"
-  ],
+  "stylelint.validate": ["css", "scss", ".module.scss"],
   "editor.codeActionsOnSave": {
     "source.fixAll.stylelint": true
   }
