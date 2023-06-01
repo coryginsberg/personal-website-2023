@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
+  reactStrictMode: true,
   sassOptions: {
     logger: {
       warn: function (message) {

@@ -1,9 +1,10 @@
 import React from 'react';
-import ProjectCard from './components/projectCard';
-import styles from './styles/projects.module.scss';
+
+import igbPreview from '../public/project_previews/igb_preview.png';
 import mfbPreview from '../public/project_previews/mfb_preview.png';
 import rtwPreview from '../public/project_previews/rtw_preview.png';
-import igbPreview from '../public/project_previews/igb_preview.png';
+import ProjectCard from './components/projectCard';
+import styles from './styles/projects.module.scss';
 
 export function Projects() {
   return (

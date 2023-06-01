@@ -1,8 +1,9 @@
 import Image from 'next/image';
-import React from 'react';
-import header from './styles/header.module.scss';
 import Link from 'next/link';
+import React from 'react';
+
 import RoundedButton from './components/roundedButton';
+import header from './styles/header.module.scss';
 
 export default function Header() {
   return (
@@ -13,8 +14,7 @@ export default function Header() {
         </Link>
         <Link
           href="https://www.linkedin.com/in/cory-ginsberg/"
-          className={header.link}
-        >
+          className={header.link}>
           LinkedIn
         </Link>
       </div>

@@ -1,9 +1,10 @@
 'use client';
 
-import React, {useLayoutEffect, useRef} from 'react';
-import styles from './../styles/components/projectCard.module.scss';
-import Image, {StaticImageData} from 'next/image';
 import gsap, {Power4} from 'gsap';
+import Image, {StaticImageData} from 'next/image';
+import React, {useLayoutEffect, useRef} from 'react';
+
+import styles from './../styles/components/projectCard.module.scss';
 
 type Props = {
   title: string;

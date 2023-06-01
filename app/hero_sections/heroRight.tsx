@@ -1,8 +1,9 @@
+import Image from 'next/image';
 import React from 'react';
+
+import headshot from '../../public/headshot.png';
 import styles from '../styles/hero.module.scss';
 import vars from '../styles/variables.module.scss';
-import Image from 'next/image';
-import headshot from '../../public/headshot.png';
 
 export default function HeroRight() {
   const headshotPopout = (
@@ -12,8 +13,7 @@ export default function HeroRight() {
       viewBox="0 0 1200 1800"
       fill="none"
       aria-hidden="true"
-      className={styles.svg}
-    >
+      className={styles.svg}>
       <path
         d="M876.717,1651.73c-202.315,193.147 -523.384,190.229 -722.109,-8.657c-201.554,-201.714 -201.422,-529.118 0.294,-730.672c2.843,-2.84 -2.891,2.76 0,0l2175.51,-2175.31l1469.9,-8.394l-1345.7,1345.7l0.743,0.744l-1578.35,1576.87l-0.282,-0.283Z"
         fill={vars.accentColor}
@@ -31,8 +31,7 @@ export default function HeroRight() {
           y={2563}
           width={1456}
           height={1916}
-          transform="matrix(1,0,0,1,-3443.09,-2257)"
-        >
+          transform="matrix(1,0,0,1,-3443.09,-2257)">
           <Image
             alt="Headshot of me"
             src={headshot}

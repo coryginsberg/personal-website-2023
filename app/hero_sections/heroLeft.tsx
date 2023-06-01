@@ -1,9 +1,15 @@
-import React from 'react';
-import RoundedButton from '../components/roundedButton';
-import vars from '../styles/variables.module.scss';
-import styles from '../styles/hero.module.scss';
-import TextPill from '../components/textPill';
 import Image from 'next/image';
+import React from 'react';
+
+import RoundedButton from '../components/roundedButton';
+import TextPill from '../components/textPill';
+import styles from '../styles/hero.module.scss';
+import vars from '../styles/variables.module.scss';
+
+import tsLogo from '../../public/languages/ts_logo.png';
+import reactLogo from '../../public/languages/react_logo.png';
+import pythonLogo from '../../public/languages/python_logo.svg';
+import swiftLogo from '../../public/languages/swift_logo.svg';
 
 export default function HeroLeft() {
   const pills = (
@@ -14,13 +20,12 @@ export default function HeroLeft() {
           textColor={vars.textColorLight}
           imageLeft={
             <Image
-              src="/languages/react_logo.png"
+              src={reactLogo}
               alt="React Logo"
               width={38}
               height={30}
             />
-          }
-        >
+          }>
           React
         </TextPill>
         <TextPill
@@ -28,13 +33,12 @@ export default function HeroLeft() {
           textColor={vars.textColorLight}
           imageLeft={
             <Image
-              src="/languages/ts_logo.png"
+              src={tsLogo}
               alt="TypeScript Logo"
               width={38}
               height={30}
             />
-          }
-        >
+          }>
           TypeScript
         </TextPill>
       </div>
@@ -44,13 +48,12 @@ export default function HeroLeft() {
           textColor={vars.textColorLight}
           imageLeft={
             <Image
-              src="/languages/python_logo.svg"
+              src={pythonLogo}
               alt="Python Logo"
               width={32}
               height={30}
             />
-          }
-        >
+          }>
           Python
         </TextPill>
         <TextPill
@@ -58,13 +61,12 @@ export default function HeroLeft() {
           textColor={vars.textColorDark}
           imageLeft={
             <Image
-              src="/languages/swift_logo.svg"
+              src={swiftLogo}
               alt="Swift Logo"
               width={38}
               height={30}
             />
-          }
-        >
+          }>
           Swift
         </TextPill>
       </div>
@@ -83,8 +85,7 @@ export default function HeroLeft() {
       <RoundedButton
         backgroundColor={vars.accentColor}
         color={vars.textColorLight}
-        className={styles.button}
-      >
+        className={styles.button}>
         Check out my resume
       </RoundedButton>
       {pills}
