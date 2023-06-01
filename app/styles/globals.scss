@@ -1,6 +1,6 @@
 // Put all global scoped components here. For global scss stuff, use globals.module.scss
-@use "./variables.module.scss" as var;
-@use "./components/roundedButton.module.scss";
+@use './variables.module.scss' as var;
+@use './components/roundedButton.module.scss';
 
 * {
   box-sizing: border-box;
@@ -19,7 +19,7 @@ body {
 body {
   @include var.theme('color', var.$foreground-color);
   @include var.theme('background-color', var.$background-color);
-  
+
   height: 100vh;
   padding: {
     left: 80px;

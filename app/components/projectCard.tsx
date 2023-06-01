@@ -1,10 +1,10 @@
 'use client';
 
-import React, { useLayoutEffect, useRef } from 'react';
+import React, {useLayoutEffect, useRef} from 'react';
 import styles from './../styles/components/projectCard.module.scss';
 import Image from 'next/image';
-import { URL } from 'url';
-import gsap, { Power4 } from 'gsap';
+import {URL} from 'url';
+import gsap, {Power4} from 'gsap';
 
 type Props = {
   title: string;
@@ -54,7 +54,7 @@ export default function ProjectCard(props: Props) {
 
   return (
     <div className={styles.root} ref={rootRef}>
-      <a href={props.href?.toString()} target='_blank'>
+      <a href={props.href?.toString()} target="_blank">
         <Image
           className={styles.image}
           alt={`Preview Image for ${props.title}`}

@@ -14,8 +14,8 @@ export default function HeroLeft() {
           textColor={vars.textColorLight}
           imageLeft={
             <Image
-              src='/languages/react_logo.png'
-              alt='React Logo'
+              src="/languages/react_logo.png"
+              alt="React Logo"
               width={38}
               height={30}
             />
@@ -28,8 +28,8 @@ export default function HeroLeft() {
           textColor={vars.textColorLight}
           imageLeft={
             <Image
-              src='/languages/ts_logo.png'
-              alt='TypeScript Logo'
+              src="/languages/ts_logo.png"
+              alt="TypeScript Logo"
               width={38}
               height={30}
             />
@@ -44,8 +44,8 @@ export default function HeroLeft() {
           textColor={vars.textColorLight}
           imageLeft={
             <Image
-              src='/languages/python_logo.svg'
-              alt='Python Logo'
+              src="/languages/python_logo.svg"
+              alt="Python Logo"
               width={32}
               height={30}
             />
@@ -58,8 +58,8 @@ export default function HeroLeft() {
           textColor={vars.textColorDark}
           imageLeft={
             <Image
-              src='/languages/swift_logo.svg'
-              alt='Swift Logo'
+              src="/languages/swift_logo.svg"
+              alt="Swift Logo"
               width={38}
               height={30}
             />
