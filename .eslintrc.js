@@ -3,7 +3,11 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['fbjs', 'plugin:react/recommended'],
+  extends: [
+    'fbjs',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+  ],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
