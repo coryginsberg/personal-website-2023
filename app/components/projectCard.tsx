@@ -2,14 +2,13 @@
 
 import React, {useLayoutEffect, useRef} from 'react';
 import styles from './../styles/components/projectCard.module.scss';
-import Image from 'next/image';
-import {URL} from 'url';
+import Image, {StaticImageData} from 'next/image';
 import gsap, {Power4} from 'gsap';
 
 type Props = {
   title: string;
-  src: string;
-  href: URL;
+  src: StaticImageData;
+  href: string;
 };
 
 export default function ProjectCard(props: Props) {
@@ -62,7 +61,7 @@ export default function ProjectCard(props: Props) {
           height={450}
           width={450}
           quality={100}
-          unoptimized={true}
+          placeholder="blur"
           ref={cardRef}
           onMouseEnter={onMouseEnterHandler}
           onMouseLeave={onMouseLeaveHandler}

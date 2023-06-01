@@ -1,11 +1,13 @@
 import React from 'react';
-import styles from '../styles/hero.module.scss';
 import vars from '../styles/variables.module.scss';
 import Image from 'next/image';
 import headshot from '../../public/headshot.png';
+import styles from '../styles/hero.module.scss';
 
-export default function HeroRight() {
-  const headshotPopout = (
+type Props = {};
+
+export default function Headshot(props: Props) {
+  return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       version="1.1"
@@ -43,15 +45,5 @@ export default function HeroRight() {
         </foreignObject>
       </g>
     </svg>
-  );
-
-  return (
-    <div className={styles.heroRight}>
-      <div className={styles.heroText}>
-        <div className={styles.largeText}>5+</div>
-        <div className={styles.smallText}>years experience</div>
-      </div>
-      <div className={styles.imagePopout}>{headshotPopout}</div>
-    </div>
   );
 }

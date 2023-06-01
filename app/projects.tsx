@@ -1,6 +1,9 @@
 import React from 'react';
 import ProjectCard from './components/projectCard';
 import styles from './styles/projects.module.scss';
+import mfbPreview from '../public/project_previews/mfb_preview.png';
+import rtwPreview from '../public/project_previews/rtw_preview.png';
+import igbPreview from '../public/project_previews/igb_preview.png';
 
 export function Projects() {
   return (
@@ -9,18 +12,18 @@ export function Projects() {
       <div className={styles.projectsLayout}>
         <ProjectCard
           title="Meta for Business"
-          src={'/project_previews/mfb_preview.png'}
-          href={new URL('https://www.facebook.com/business/')}
+          src={mfbPreview}
+          href={'https://www.facebook.com/business/'}
         />
         <ProjectCard
           title="Reach The World On Facebook"
-          src={'/project_previews/rtw_preview.png'}
-          href={new URL('https://reachtheworldonfacebook.com/')}
+          src={rtwPreview}
+          href={'https://reachtheworldonfacebook.com/'}
         />
         <ProjectCard
           title="Instagram for Business"
-          src={'/project_previews/igb_preview.png'}
-          href={new URL('https://business.instagram.com/')}
+          src={igbPreview}
+          href={'https://business.instagram.com/'}
         />
       </div>
     </div>
