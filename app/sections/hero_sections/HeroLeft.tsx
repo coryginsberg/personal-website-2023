@@ -65,7 +65,8 @@ export default function HeroLeft(): React.ReactElement {
       <RoundedButton
         backgroundColor={vars.accentColor}
         color={vars.textColorLight}
-        className={styles.button}>
+        className={styles.button}
+        shouldAnimate={true}>
         Check out my resume
       </RoundedButton>
       {pills}
