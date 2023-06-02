@@ -2,13 +2,15 @@
 
 import gsap from 'gsap';
 import Image from 'next/image';
-import React, {useLayoutEffect, useRef} from 'react';
+import * as React from 'react';
+import {useLayoutEffect, useRef} from 'react';
 
-import headshot from '../../public/headshot.png';
-import styles from '../styles/hero.module.scss';
-import vars from '../styles/variables.module.scss';
+import styles from '@styles/hero.module.scss';
+import vars from '@styles/variables.module.scss';
 
-export default function Headshot() {
+import headshot from '@public/headshot.png';
+
+export default function Headshot(): React.ReactElement {
   const backgroundRef = useRef<SVGPathElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
   const hoverTween = useRef<gsap.core.Tween>();

@@ -1,12 +1,13 @@
-import React from 'react';
+import ProjectCard from 'components/ProjectCard';
+import * as React from 'react';
 
-import igbPreview from '../public/project_previews/igb_preview.png';
-import mfbPreview from '../public/project_previews/mfb_preview.png';
-import rtwPreview from '../public/project_previews/rtw_preview.png';
-import ProjectCard from './components/projectCard';
-import styles from './styles/projects.module.scss';
+import styles from '@styles/projects.module.scss';
 
-export function Projects() {
+import igbPreview from '@public/igb_preview.png';
+import mfbPreview from '@public/mfb_preview.png';
+import rtwPreview from '@public/rtw_preview.png';
+
+export function Projects(): React.ReactElement {
   return (
     <div className={styles.root}>
       <h1>Project Spotlight</h1>

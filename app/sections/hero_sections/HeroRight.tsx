@@ -1,12 +1,13 @@
 'use client';
 
+import Headshot from 'components/Headshot';
 import gsap from 'gsap';
-import React, {useLayoutEffect, useRef} from 'react';
+import * as React from 'react';
+import {useLayoutEffect, useRef} from 'react';
 
-import Headshot from '../components/headshot';
-import styles from '../styles/hero.module.scss';
+import styles from '@styles/hero.module.scss';
 
-export default function HeroRight() {
+export default function HeroRight(): React.ReactElement {
   const blurbRef = useRef<HTMLImageElement>(null);
   const hoverTween = useRef<gsap.core.Tween>();
 

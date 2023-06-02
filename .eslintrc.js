@@ -7,6 +7,9 @@ module.exports = {
     'fbjs',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'next',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -14,4 +17,12 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {},
+  settings: {
+    'import/resolver': {
+      typescript: true,
+      node: {
+        paths: ['./'],
+      },
+    },
+  },
 };

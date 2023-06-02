@@ -1,7 +1,6 @@
-'use strict';
+import * as React from 'react';
 
-import React from 'react';
-import styles from '../styles/components/roundedButton.module.scss';
+import styles from '@styles/components/roundedButton.module.scss';
 
 type Props = {
   children: string;
@@ -10,14 +9,13 @@ type Props = {
   className?: string;
 };
 
-export default function RoundedButton(props: Props) {
+export default function RoundedButton(props: Props): React.ReactElement {
   return (
     <button
       className={props.className ?? styles.button}
       style={{
         color: props.color,
-      }}
-    >
+      }}>
       {props.children}
     </button>
   );

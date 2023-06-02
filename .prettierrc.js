@@ -5,7 +5,15 @@ module.exports = {
   trailingComma: 'all',
   bracketSpacing: false,
   jsxBracketSameLine: true,
-  importOrder: ["^components/(.*)$", "^[./]" ],
-  importOrderSeparation: true, 
-  importOrderSortSpecifiers: true 
+  importOrder: [
+    '^[./]',
+    '<THIRD_PARTY_MODULES>',
+    '^@components/(.*)$',
+    '^@sections/(.*)$',
+    '^@pages/(.*)$',
+    '^@styles/(.*)$',
+    '^@public/(.*)$',
+  ],
+  importOrderSeparation: true,
+  importOrderSortSpecifiers: true,
 };

@@ -2,9 +2,10 @@
 
 import gsap, {Power4} from 'gsap';
 import Image, {StaticImageData} from 'next/image';
-import React, {useLayoutEffect, useRef} from 'react';
+import * as React from 'react';
+import {useLayoutEffect, useRef} from 'react';
 
-import styles from './../styles/components/projectCard.module.scss';
+import styles from '@styles/components/projectCard.module.scss';
 
 type Props = {
   title: string;
@@ -12,7 +13,7 @@ type Props = {
   href: string;
 };
 
-export default function ProjectCard(props: Props) {
+export default function ProjectCard(props: Props): React.ReactElement {
   const rootRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLImageElement>(null);
   const hoverTween = useRef<gsap.core.Tween>();

@@ -1,17 +1,17 @@
+import RoundedButton from 'components/RoundedButton';
+import TextPill from 'components/TextPill';
 import Image from 'next/image';
-import React from 'react';
+import * as React from 'react';
 
-import RoundedButton from '../components/roundedButton';
-import TextPill from '../components/textPill';
-import styles from '../styles/hero.module.scss';
-import vars from '../styles/variables.module.scss';
+import styles from '@styles/hero.module.scss';
+import vars from '@styles/variables.module.scss';
 
-import tsLogo from '../../public/languages/ts_logo.png';
-import reactLogo from '../../public/languages/react_logo.png';
-import pythonLogo from '../../public/languages/python_logo.svg';
-import swiftLogo from '../../public/languages/swift_logo.svg';
+import pythonLogo from '@public/python_logo.svg';
+import reactLogo from '@public/react_logo.png';
+import swiftLogo from '@public/swift_logo.svg';
+import tsLogo from '@public/ts_logo.png';
 
-export default function HeroLeft() {
+export default function HeroLeft(): React.ReactElement {
   const pills = (
     <div className={styles.pillSection}>
       <div className={styles.pillRow}>
@@ -19,12 +19,7 @@ export default function HeroLeft() {
           backgroundColor={vars.reactBackground}
           textColor={vars.textColorLight}
           imageLeft={
-            <Image
-              src={reactLogo}
-              alt="React Logo"
-              width={38}
-              height={30}
-            />
+            <Image src={reactLogo} alt="React Logo" width={38} height={30} />
           }>
           React
         </TextPill>
@@ -32,12 +27,7 @@ export default function HeroLeft() {
           backgroundColor={vars.tsBackground}
           textColor={vars.textColorLight}
           imageLeft={
-            <Image
-              src={tsLogo}
-              alt="TypeScript Logo"
-              width={38}
-              height={30}
-            />
+            <Image src={tsLogo} alt="TypeScript Logo" width={38} height={30} />
           }>
           TypeScript
         </TextPill>
@@ -47,12 +37,7 @@ export default function HeroLeft() {
           backgroundColor={vars.accentColor}
           textColor={vars.textColorLight}
           imageLeft={
-            <Image
-              src={pythonLogo}
-              alt="Python Logo"
-              width={32}
-              height={30}
-            />
+            <Image src={pythonLogo} alt="Python Logo" width={32} height={30} />
           }>
           Python
         </TextPill>
@@ -60,12 +45,7 @@ export default function HeroLeft() {
           backgroundColor={vars.gray}
           textColor={vars.textColorDark}
           imageLeft={
-            <Image
-              src={swiftLogo}
-              alt="Swift Logo"
-              width={38}
-              height={30}
-            />
+            <Image src={swiftLogo} alt="Swift Logo" width={38} height={30} />
           }>
           Swift
         </TextPill>
