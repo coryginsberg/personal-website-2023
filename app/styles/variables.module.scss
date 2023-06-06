@@ -19,14 +19,20 @@ $react-background: #2a2c32;
 $ts-background: #235a97;
 $dark-theme: 'dark-theme';
 $light-theme: 'light-theme';
+$copyright-color: #444;
+$opensource-color: #777;
 $themes: (
   $light-theme: (
-    $foreground-color: #000,
-    $background-color: #fff,
+    $foreground-color: #212121,
+    $background-color: #eee,
+    $copyright-color: #444,
+    $opensource-color: #777,
   ),
   $dark-theme: (
     $foreground-color: #fff,
     $background-color: #212127,
+    $copyright-color: #ccc,
+    $opensource-color: #999,
   ),
 );
 

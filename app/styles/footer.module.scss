@@ -1,0 +1,32 @@
+@use './variables.module.scss' as var;
+
+.root {
+  padding: {
+    top: 40px;
+    bottom: 80px;
+  }
+  text-align: center;
+
+  .copyright {
+    @include var.theme('color', var.$copyright-color);
+
+    font-size: 24px;
+    font-weight: normal;
+    padding-bottom: 20px;
+  }
+
+  .openSource {
+    @include var.theme('color', var.$opensource-color);
+
+    font-size: 16px;
+    font-weight: normal;
+
+    .link {
+      text-decoration: underline;
+
+      &:hover {
+        color: #666;
+      }
+    }
+  }
+}
