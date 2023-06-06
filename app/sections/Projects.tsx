@@ -1,6 +1,5 @@
+import ProjectCard from '@/components/ProjectCard';
 import * as React from 'react';
-
-import ProjectCard from '@components/ProjectCard';
 
 import styles from '@styles/projects.module.scss';
 

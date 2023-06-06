@@ -17,7 +17,6 @@ module.exports = {
     config.resolve.alias = {
       ...config.resolve.alias,
       '@': path.resolve(__dirname, './app'),
-      '@components': path.resolve(__dirname, './app/components/**'),
       sections: path.resolve(__dirname, './app/sections/**'),
       '@styles': path.resolve(__dirname, './app/styles'),
       '@public': path.resolve(__dirname, './public/**'),

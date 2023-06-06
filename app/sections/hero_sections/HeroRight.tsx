@@ -1,10 +1,9 @@
 'use client';
 
+import Headshot from '@/components/Headshot';
 import gsap from 'gsap';
 import * as React from 'react';
 import {useLayoutEffect, useRef} from 'react';
-
-import Headshot from '@components/Headshot';
 
 import styles from '@styles/hero.module.scss';
 
