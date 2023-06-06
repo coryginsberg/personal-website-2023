@@ -1,10 +1,10 @@
 'use client';
 
+import styles from './../styles/components/roundedButton.module.scss';
+
 import {gsap} from 'gsap';
 import * as React from 'react';
 import {useLayoutEffect, useRef, useState} from 'react';
-
-import styles from '@styles/components/roundedButton.module.scss';
 
 type Props = {
   children: string;

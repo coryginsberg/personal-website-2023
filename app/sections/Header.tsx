@@ -1,9 +1,9 @@
-import RoundedButton from 'components/RoundedButton';
+import RoundedButton from './../components/RoundedButton';
+import header from './../styles/header.module.scss';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
-
-import header from '@styles/header.module.scss';
 
 export default function Header(): React.ReactElement {
   return (

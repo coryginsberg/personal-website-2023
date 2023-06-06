@@ -1,15 +1,14 @@
-import RoundedButton from 'components/RoundedButton';
-import TextPill from 'components/TextPill';
+import pythonLogo from './../../../public/languages/python_logo.svg';
+import reactLogo from './../../../public/languages/react_logo.png';
+import swiftLogo from './../../../public/languages/swift_logo.svg';
+import tsLogo from './../../../public/languages/ts_logo.png';
+import RoundedButton from './../../components/RoundedButton';
+import TextPill from './../../components/TextPill';
+import styles from './../../styles/hero.module.scss';
+import vars from './../../styles/variables.module.scss';
+
 import Image from 'next/image';
 import * as React from 'react';
-
-import styles from '@styles/hero.module.scss';
-import vars from '@styles/variables.module.scss';
-
-import pythonLogo from '@public/python_logo.svg';
-import reactLogo from '@public/react_logo.png';
-import swiftLogo from '@public/swift_logo.svg';
-import tsLogo from '@public/ts_logo.png';
 
 export default function HeroLeft(): React.ReactElement {
   const pills = (

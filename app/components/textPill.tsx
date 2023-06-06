@@ -1,6 +1,6 @@
-import * as React from 'react';
+import styles from './../styles/components/textPill.module.scss';
 
-import styles from '@styles/components/textPill.module.scss';
+import * as React from 'react';
 
 type Props = {
   backgroundColor: string;

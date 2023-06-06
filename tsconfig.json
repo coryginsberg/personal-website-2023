@@ -23,24 +23,6 @@
         "name": "next"
       }
     ],
-    "baseUrl": "app",
-    "paths": {
-      "components/*": [
-        "components/*",
-      ],
-      "sections/*": [
-        "sections/*",
-        "sections/hero_sections/*",
-      ],
-      "@styles/*": [
-        "styles/*",
-      ],
-      "@public/*": [
-        "../public/*",
-        "../public/languages/*",
-        "../public/project_previews/*",
-      ],
-    }
   },
   "include": [
     "next-env.d.ts",

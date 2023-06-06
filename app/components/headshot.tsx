@@ -1,14 +1,13 @@
 'use client';
 
+import headshot from './../../public/headshot.png';
+import styles from './../styles/hero.module.scss';
+import vars from './../styles/variables.module.scss';
+
 import gsap from 'gsap';
 import Image from 'next/image';
 import * as React from 'react';
 import {useLayoutEffect, useRef} from 'react';
-
-import styles from '@styles/hero.module.scss';
-import vars from '@styles/variables.module.scss';
-
-import headshot from '@public/headshot.png';
 
 export default function Headshot(): React.ReactElement {
   const backgroundRef = useRef<SVGPathElement>(null);

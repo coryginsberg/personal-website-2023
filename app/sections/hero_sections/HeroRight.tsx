@@ -1,11 +1,11 @@
 'use client';
 
-import Headshot from 'components/Headshot';
+import Headshot from './../../components/Headshot';
+import styles from './../../styles/hero.module.scss';
+
 import gsap from 'gsap';
 import * as React from 'react';
 import {useLayoutEffect, useRef} from 'react';
-
-import styles from '@styles/hero.module.scss';
 
 export default function HeroRight(): React.ReactElement {
   const blurbRef = useRef<HTMLImageElement>(null);

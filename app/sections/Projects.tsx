@@ -1,11 +1,10 @@
-import ProjectCard from 'components/ProjectCard';
+import igbPreview from './../../public/project_previews/igb_preview.png';
+import mfbPreview from './../../public/project_previews/mfb_preview.png';
+import rtwPreview from './../../public/project_previews/rtw_preview.png';
+import ProjectCard from './../components/ProjectCard';
+import styles from './../styles/projects.module.scss';
+
 import * as React from 'react';
-
-import styles from '@styles/projects.module.scss';
-
-import igbPreview from '@public/igb_preview.png';
-import mfbPreview from '@public/mfb_preview.png';
-import rtwPreview from '@public/rtw_preview.png';
 
 export function Projects(): React.ReactElement {
   return (

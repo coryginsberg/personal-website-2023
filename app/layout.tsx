@@ -1,8 +1,8 @@
-import * as React from 'react';
-import Footer from 'sections/Footer';
-import Header from 'sections/Header';
+import Footer from './sections/Footer';
+import Header from './sections/Header';
+import './styles/globals.scss';
 
-import '@styles/globals.scss';
+import * as React from 'react';
 
 export const metadata = {
   title: 'Cory Ginsberg',
