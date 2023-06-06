@@ -1,4 +1,5 @@
-import RoundedButton from 'components/RoundedButton';
+import RoundedButton from '../components/RoundedButton';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';

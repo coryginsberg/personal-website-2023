@@ -1,5 +1,6 @@
-import RoundedButton from 'components/RoundedButton';
-import TextPill from 'components/TextPill';
+import RoundedButton from '../../components/RoundedButton';
+import TextPill from '../../components/TextPill';
+
 import Image from 'next/image';
 import * as React from 'react';
 
