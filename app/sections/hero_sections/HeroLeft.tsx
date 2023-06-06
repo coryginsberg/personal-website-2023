@@ -1,7 +1,8 @@
-import RoundedButton from 'components/RoundedButton';
-import TextPill from 'components/TextPill';
 import Image from 'next/image';
 import * as React from 'react';
+
+import RoundedButton from '@components/RoundedButton';
+import TextPill from '@components/TextPill';
 
 import styles from '@styles/hero.module.scss';
 import vars from '@styles/variables.module.scss';
