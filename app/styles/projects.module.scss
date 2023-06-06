@@ -1,11 +1,24 @@
+@use './variables.module.scss' as var;
+
 .root {
-  padding-top: 100px;
+  padding-top: 120px;
 
   .projectsLayout {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 24px;
-    padding-bottom: 100px;
+    padding: {
+      top: 24px;
+      bottom: 100px;
+    }
+  }
+
+  @media screen and (max-width: var.$tablet-breakpoint) {
+    padding-top: 48px;
+    
+    .projectsLayout {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }

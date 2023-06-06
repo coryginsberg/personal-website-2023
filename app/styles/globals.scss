@@ -26,6 +26,13 @@ body {
     left: 80px;
     right: 80px;
   }
+
+  @media screen and (max-width: var.$mobile-breakpoint) {
+    padding: {
+      left: 24px;
+      right: 24px;
+    }
+  }
 }
 
 a {

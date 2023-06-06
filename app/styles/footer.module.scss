@@ -29,4 +29,8 @@
       }
     }
   }
+
+  @media screen and (max-width: var.$mobile-breakpoint) {
+    padding-top: 0;
+  }
 }
