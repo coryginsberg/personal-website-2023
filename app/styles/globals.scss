@@ -21,7 +21,7 @@ body {
   @include var.theme('background-color', var.$background-color);
 
   height: 100vh;
-
+  font-family: 'Roboto', sans-serif;
   padding: {
     left: 80px;
     right: 80px;
