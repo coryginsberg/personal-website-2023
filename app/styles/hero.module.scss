@@ -76,4 +76,98 @@
       }
     }
   }
+
+  @media screen and (max-width: var.$tablet-breakpoint) {
+    max-height: unset;
+    margin-top: -80px;
+    position: relative;
+
+    .heroLeft {
+      padding-top: 100px;
+      .pillSection {
+        .pillRow {
+          margin-right: -52px;
+        }
+      }
+    }
+
+    .heroRight {
+      .heroText {
+        top: 300px;
+      }
+    }
+  }
+
+  @media screen and (max-width: var.$mobile-breakpoint) {
+    flex-direction: column-reverse;
+    max-height: 100%;
+    margin-top: -140px;
+    position: relative;
+
+    .heroRight {
+      width: 100%;
+      max-width: 100%;
+      position: relative;
+
+      .heroText {
+        background-color: var.$dark-gray;
+        border-radius: 12px;
+        padding: 16px 24px;
+        top: 400px;
+        left: 0;
+        width: fit-content;
+        position: relative;
+        color: var.$text-color-light;
+
+        .largeText {
+          font-size: 42px;
+        }
+        .smallText {
+          font-size: 16px;
+        }
+      }
+
+      .imagePopout {
+        margin-left: 20%;
+
+        .svg {
+          max-height: 750px;
+          overflow: visible;
+          z-index: -1;
+          position: relative;
+        }
+      }
+    }
+
+    .heroLeft {
+      width: 100%;
+      padding: 0 {
+        top: 48px;
+      };
+      .header {
+        font-size: 48px;
+      }
+      .blurb {
+        padding-bottom: 28px;
+      }
+      .button {
+        @include roundedButton.button(
+          $background-color: var.$accent-color,
+          $font-size: 16px
+        );
+      }
+      .pillSection {
+        bottom: 0;
+        margin: {
+          bottom: 0;
+          top: 32px;
+        }
+        
+        .pillRow {
+          display: flex;
+          padding-bottom: 16px;
+        }
+      }
+    }
+  }
 }

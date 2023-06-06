@@ -7,8 +7,8 @@ $max-width: 1800px;
 $default-padding: 8px;
 
 // Mobile breakpoints
-$nav-breakpoint: 670px;
-$mobile-breakpoint: 1020px;
+$tablet-breakpoint: 1020px;
+$mobile-breakpoint: 740px;
 
 // Colors
 $accent-color: #00a0ff;
@@ -97,5 +97,5 @@ $themes: (
   reactBackground: $react-background;
   tsBackground: $ts-background;
   mobileBreakpoint: $mobile-breakpoint;
-  navBreakpoint: $nav-breakpoint;
+  tabletBreakpoint: $tablet-breakpoint;
 }

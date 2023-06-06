@@ -1,7 +1,7 @@
 @use './../variables.module.scss' as var;
 
 .root {
-  @media screen and (min-width: var.$mobile-breakpoint + 1) {
+  @media screen and (min-width: var.$tablet-breakpoint + 1) {
     @for $i from 1 through 3 {
       &:nth-child(#{$i}) {
         padding-top: calc(50px * $i);
@@ -19,7 +19,6 @@
     }
   }
   
-
   .image {
     border-radius: 12px;
     border: none;
@@ -33,7 +32,7 @@
     padding-top: 16px;
   }
 
-  @media screen and (max-width: var.$mobile-breakpoint) {
+  @media screen and (max-width: var.$tablet-breakpoint) {
     padding-top: 24px;
     justify-self: center;
   }
