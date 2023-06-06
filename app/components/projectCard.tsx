@@ -1,18 +1,19 @@
 'use client';
 
-import React, {useLayoutEffect, useRef} from 'react';
-import styles from './../styles/components/projectCard.module.scss';
-import Image from 'next/image';
-import {URL} from 'url';
 import gsap, {Power4} from 'gsap';
+import Image, {StaticImageData} from 'next/image';
+import * as React from 'react';
+import {useLayoutEffect, useRef} from 'react';
+
+import styles from '@styles/components/projectCard.module.scss';
 
 type Props = {
   title: string;
-  src: string;
-  href: URL;
+  src: StaticImageData;
+  href: string;
 };
 
-export default function ProjectCard(props: Props) {
+export default function ProjectCard(props: Props): React.ReactElement {
   const rootRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLImageElement>(null);
   const hoverTween = useRef<gsap.core.Tween>();
@@ -62,7 +63,7 @@ export default function ProjectCard(props: Props) {
           height={450}
           width={450}
           quality={100}
-          unoptimized={true}
+          placeholder="blur"
           ref={cardRef}
           onMouseEnter={onMouseEnterHandler}
           onMouseLeave={onMouseLeaveHandler}

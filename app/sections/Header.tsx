@@ -1,10 +1,11 @@
+import RoundedButton from 'components/RoundedButton';
 import Image from 'next/image';
-import React from 'react';
-import header from './styles/header.module.scss';
 import Link from 'next/link';
-import RoundedButton from './components/roundedButton';
+import * as React from 'react';
 
-export default function Header() {
+import header from '@styles/header.module.scss';
+
+export default function Header(): React.ReactElement {
   return (
     <div className={header.root}>
       <div className={header.sectionLinks}>
@@ -13,8 +14,7 @@ export default function Header() {
         </Link>
         <Link
           href="https://www.linkedin.com/in/cory-ginsberg/"
-          className={header.link}
-        >
+          className={header.link}>
           LinkedIn
         </Link>
       </div>

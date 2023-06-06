@@ -1,12 +1,13 @@
-import styles from './styles/page.module.scss';
-import Hero from './hero_sections/hero';
-import {Projects} from './projects';
+import Hero from 'sections/Hero';
+import {Projects} from 'sections/Projects';
+
+import styles from '@styles/page.module.scss';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <div className={styles.main}>
       <Hero />
       <Projects />
-    </main>
+    </div>
   );
 }

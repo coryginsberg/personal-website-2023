@@ -1,11 +1,17 @@
-import React from 'react';
-import RoundedButton from '../components/roundedButton';
-import vars from '../styles/variables.module.scss';
-import styles from '../styles/hero.module.scss';
-import TextPill from '../components/textPill';
+import RoundedButton from 'components/RoundedButton';
+import TextPill from 'components/TextPill';
 import Image from 'next/image';
+import * as React from 'react';
 
-export default function HeroLeft() {
+import styles from '@styles/hero.module.scss';
+import vars from '@styles/variables.module.scss';
+
+import pythonLogo from '@public/python_logo.svg';
+import reactLogo from '@public/react_logo.png';
+import swiftLogo from '@public/swift_logo.svg';
+import tsLogo from '@public/ts_logo.png';
+
+export default function HeroLeft(): React.ReactElement {
   const pills = (
     <div className={styles.pillSection}>
       <div className={styles.pillRow}>
@@ -13,28 +19,16 @@ export default function HeroLeft() {
           backgroundColor={vars.reactBackground}
           textColor={vars.textColorLight}
           imageLeft={
-            <Image
-              src="/languages/react_logo.png"
-              alt="React Logo"
-              width={38}
-              height={30}
-            />
-          }
-        >
+            <Image src={reactLogo} alt="React Logo" width={38} height={30} />
+          }>
           React
         </TextPill>
         <TextPill
           backgroundColor={vars.tsBackground}
           textColor={vars.textColorLight}
           imageLeft={
-            <Image
-              src="/languages/ts_logo.png"
-              alt="TypeScript Logo"
-              width={38}
-              height={30}
-            />
-          }
-        >
+            <Image src={tsLogo} alt="TypeScript Logo" width={38} height={30} />
+          }>
           TypeScript
         </TextPill>
       </div>
@@ -43,28 +37,16 @@ export default function HeroLeft() {
           backgroundColor={vars.accentColor}
           textColor={vars.textColorLight}
           imageLeft={
-            <Image
-              src="/languages/python_logo.svg"
-              alt="Python Logo"
-              width={32}
-              height={30}
-            />
-          }
-        >
+            <Image src={pythonLogo} alt="Python Logo" width={32} height={30} />
+          }>
           Python
         </TextPill>
         <TextPill
           backgroundColor={vars.gray}
           textColor={vars.textColorDark}
           imageLeft={
-            <Image
-              src="/languages/swift_logo.svg"
-              alt="Swift Logo"
-              width={38}
-              height={30}
-            />
-          }
-        >
+            <Image src={swiftLogo} alt="Swift Logo" width={38} height={30} />
+          }>
           Swift
         </TextPill>
       </div>
@@ -84,7 +66,7 @@ export default function HeroLeft() {
         backgroundColor={vars.accentColor}
         color={vars.textColorLight}
         className={styles.button}
-      >
+        shouldAnimate={true}>
         Check out my resume
       </RoundedButton>
       {pills}
