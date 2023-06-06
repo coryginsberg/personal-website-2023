@@ -23,22 +23,22 @@
         "name": "next"
       }
     ],
-    "baseUrl": ".",
+    "baseUrl": "app",
     "paths": {
       "components/*": [
-        "app/components/*"
+        "components/*",
       ],
       "sections/*": [
-        "app/sections/*",
-        "app/sections/hero_sections/*",
+        "sections/*",
+        "sections/hero_sections/*",
       ],
       "@styles/*": [
-        "app/styles/*"
+        "styles/*",
       ],
       "@public/*": [
-        "public/*",
-        "public/languages/*",
-        "public/project_previews/*",
+        "../public/*",
+        "../public/languages/*",
+        "../public/project_previews/*",
       ],
     }
   },
