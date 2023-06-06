@@ -13,14 +13,4 @@ module.exports = {
       },
     },
   },
-  webpack(config) {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      '@': path.resolve(__dirname, './app'),
-      sections: path.resolve(__dirname, './app/sections/**'),
-      '@styles': path.resolve(__dirname, './app/styles'),
-      '@public': path.resolve(__dirname, './public/**'),
-    };
-    return config;
-  },
 };
