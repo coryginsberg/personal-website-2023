@@ -55,7 +55,10 @@ export default function ProjectCard(props: Props): React.ReactElement {
 
   return (
     <div className={styles.root} ref={rootRef}>
-      <a href={props.href?.toString()} target="_blank">
+      <a
+        href={props.href?.toString()}
+        target="_blank"
+        rel="noopener noreferrer">
         <Image
           className={styles.image}
           alt={`Preview Image for ${props.title}`}
