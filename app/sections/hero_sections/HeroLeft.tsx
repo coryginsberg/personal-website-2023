@@ -1,3 +1,5 @@
+'use client';
+
 import RoundedButton from 'components/RoundedButton';
 import TextPill from 'components/TextPill';
 import Image from 'next/image';
@@ -66,7 +68,10 @@ export default function HeroLeft(): React.ReactElement {
         backgroundColor={vars.accentColor}
         color={vars.textColorLight}
         className={styles.button}
-        shouldAnimate={true}>
+        shouldAnimate={true}
+        onClick={() => {
+          window.open('/Resume.pdf', '_target');
+        }}>
         Check out my resume
       </RoundedButton>
       {pills}

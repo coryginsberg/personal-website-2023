@@ -12,6 +12,7 @@ type Props = {
   backgroundColor?: string;
   className?: string;
   shouldAnimate?: boolean;
+  onClick: () => void;
 };
 
 export default function RoundedButton(props: Props): React.ReactElement {
@@ -86,7 +87,8 @@ export default function RoundedButton(props: Props): React.ReactElement {
       }}
       onMouseLeave={() => {
         zoom?.pause(0);
-      }}>
+      }}
+      onClick={props.onClick}>
       {props.children}
     </button>
   );
