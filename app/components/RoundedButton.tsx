@@ -12,7 +12,7 @@ type Props = {
   backgroundColor?: string;
   className?: string;
   shouldAnimate?: boolean;
-  onClick: () => void;
+  onClick?: () => void;
 };
 
 export default function RoundedButton(props: Props): React.ReactElement {
