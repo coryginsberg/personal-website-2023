@@ -11,9 +11,11 @@
 html,
 body {
   max-width: var.$max-width;
-  overflow-x: visible;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (max-width: var.$mobile-breakpoint) {
+    overflow-x: hidden;
+  }
 }
 
 body {
